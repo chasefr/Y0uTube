@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target ‘Y0uTube’ do
+    pod 'Alamofire', '~> 4.3'
+	pod 'SwiftyJSON'
+	pod 'Google/SignIn'
+end
+
+target 'Y0uTubeTests' do
+	pod 'Alamofire’, '~> 4.3'
+	pod 'Google/SignIn'
+end

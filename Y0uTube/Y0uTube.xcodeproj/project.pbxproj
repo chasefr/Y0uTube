@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		489BFA6D690ECD258FEBF3A0 /* Pods_Y0uTubeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABAA61E51D1DB349EC901EA /* Pods_Y0uTubeTests.framework */; };
+		4E93D0D41E59C5010015044D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E93D0D31E59C5010015044D /* GoogleService-Info.plist */; };
+		4E93D0D51E59C5010015044D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E93D0D31E59C5010015044D /* GoogleService-Info.plist */; };
+		4E93D0D61E59C5010015044D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E93D0D31E59C5010015044D /* GoogleService-Info.plist */; };
+		4ED97AAD1E59B7A800EB755F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED97AAC1E59B7A800EB755F /* AppDelegate.swift */; };
+		4ED97AAF1E59B7A800EB755F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED97AAE1E59B7A800EB755F /* ViewController.swift */; };
+		4ED97AB21E59B7A800EB755F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED97AB01E59B7A800EB755F /* Main.storyboard */; };
+		4ED97AB41E59B7A800EB755F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED97AB31E59B7A800EB755F /* Assets.xcassets */; };
+		4ED97AB71E59B7A800EB755F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED97AB51E59B7A800EB755F /* LaunchScreen.storyboard */; };
+		4ED97AC21E59B7A800EB755F /* Y0uTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED97AC11E59B7A800EB755F /* Y0uTubeTests.swift */; };
+		4ED97ACD1E59B7A800EB755F /* Y0uTubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED97ACC1E59B7A800EB755F /* Y0uTubeUITests.swift */; };
+		4ED97ADB1E59BA1000EB755F /* MySubsriptionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED97ADA1E59BA1000EB755F /* MySubsriptionTableView.swift */; };
+		BA360438E7E5C7B455235C8C /* Pods_Y0uTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E8AB88F3F5DE411A826EF2 /* Pods_Y0uTube.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4ED97ABE1E59B7A800EB755F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ED97AA11E59B7A800EB755F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ED97AA81E59B7A800EB755F;
+			remoteInfo = Y0uTube;
+		};
+		4ED97AC91E59B7A800EB755F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ED97AA11E59B7A800EB755F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ED97AA81E59B7A800EB755F;
+			remoteInfo = Y0uTube;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D217601B363E7F04B287465 /* Pods-Y0uTubeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Y0uTubeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Y0uTubeTests/Pods-Y0uTubeTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E93D0D31E59C5010015044D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4ED97AA91E59B7A800EB755F /* Y0uTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Y0uTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED97AAC1E59B7A800EB755F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4ED97AAE1E59B7A800EB755F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4ED97AB11E59B7A800EB755F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4ED97AB31E59B7A800EB755F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4ED97AB61E59B7A800EB755F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4ED97AB81E59B7A800EB755F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED97ABD1E59B7A800EB755F /* Y0uTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Y0uTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED97AC11E59B7A800EB755F /* Y0uTubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y0uTubeTests.swift; sourceTree = "<group>"; };
+		4ED97AC31E59B7A800EB755F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED97AC81E59B7A800EB755F /* Y0uTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Y0uTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED97ACC1E59B7A800EB755F /* Y0uTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y0uTubeUITests.swift; sourceTree = "<group>"; };
+		4ED97ACE1E59B7A800EB755F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED97ADA1E59BA1000EB755F /* MySubsriptionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySubsriptionTableView.swift; sourceTree = "<group>"; };
+		594DB5959B4D55E94FD7422E /* Pods-Y0uTubeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Y0uTubeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Y0uTubeTests/Pods-Y0uTubeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81EF802B172A6079B4F95B7E /* Pods-Y0uTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Y0uTube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Y0uTube/Pods-Y0uTube.debug.xcconfig"; sourceTree = "<group>"; };
+		EABAA61E51D1DB349EC901EA /* Pods_Y0uTubeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Y0uTubeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E8AB88F3F5DE411A826EF2 /* Pods_Y0uTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Y0uTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F1F1B323BC4D7631E7172D /* Pods-Y0uTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Y0uTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-Y0uTube/Pods-Y0uTube.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4ED97AA61E59B7A800EB755F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA360438E7E5C7B455235C8C /* Pods_Y0uTube.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED97ABA1E59B7A800EB755F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489BFA6D690ECD258FEBF3A0 /* Pods_Y0uTubeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED97AC51E59B7A800EB755F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ED97AA01E59B7A800EB755F = {
+			isa = PBXGroup;
+			children = (
+				4ED97AAB1E59B7A800EB755F /* Y0uTube */,
+				4E93D0D31E59C5010015044D /* GoogleService-Info.plist */,
+				4ED97AC01E59B7A800EB755F /* Y0uTubeTests */,
+				4ED97ACB1E59B7A800EB755F /* Y0uTubeUITests */,
+				4ED97AAA1E59B7A800EB755F /* Products */,
+				69EFB9D1DD58723920425375 /* Pods */,
+				9C8A29A5839B5C763F335BED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4ED97AAA1E59B7A800EB755F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ED97AA91E59B7A800EB755F /* Y0uTube.app */,
+				4ED97ABD1E59B7A800EB755F /* Y0uTubeTests.xctest */,
+				4ED97AC81E59B7A800EB755F /* Y0uTubeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ED97AAB1E59B7A800EB755F /* Y0uTube */ = {
+			isa = PBXGroup;
+			children = (
+				4ED97AAC1E59B7A800EB755F /* AppDelegate.swift */,
+				4ED97AAE1E59B7A800EB755F /* ViewController.swift */,
+				4ED97AB01E59B7A800EB755F /* Main.storyboard */,
+				4ED97ADA1E59BA1000EB755F /* MySubsriptionTableView.swift */,
+				4EFF3EEF1E73DC7B0058B5B1 /* Resources */,
+			);
+			path = Y0uTube;
+			sourceTree = "<group>";
+		};
+		4ED97AC01E59B7A800EB755F /* Y0uTubeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4ED97AC11E59B7A800EB755F /* Y0uTubeTests.swift */,
+				4ED97AC31E59B7A800EB755F /* Info.plist */,
+			);
+			path = Y0uTubeTests;
+			sourceTree = "<group>";
+		};
+		4ED97ACB1E59B7A800EB755F /* Y0uTubeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4ED97ACC1E59B7A800EB755F /* Y0uTubeUITests.swift */,
+				4ED97ACE1E59B7A800EB755F /* Info.plist */,
+			);
+			path = Y0uTubeUITests;
+			sourceTree = "<group>";
+		};
+		4EFF3EEF1E73DC7B0058B5B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4ED97AB31E59B7A800EB755F /* Assets.xcassets */,
+				4ED97AB51E59B7A800EB755F /* LaunchScreen.storyboard */,
+				4ED97AB81E59B7A800EB755F /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		69EFB9D1DD58723920425375 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81EF802B172A6079B4F95B7E /* Pods-Y0uTube.debug.xcconfig */,
+				F8F1F1B323BC4D7631E7172D /* Pods-Y0uTube.release.xcconfig */,
+				594DB5959B4D55E94FD7422E /* Pods-Y0uTubeTests.debug.xcconfig */,
+				3D217601B363E7F04B287465 /* Pods-Y0uTubeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C8A29A5839B5C763F335BED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8AB88F3F5DE411A826EF2 /* Pods_Y0uTube.framework */,
+				EABAA61E51D1DB349EC901EA /* Pods_Y0uTubeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4ED97AA81E59B7A800EB755F /* Y0uTube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED97AD11E59B7A800EB755F /* Build configuration list for PBXNativeTarget "Y0uTube" */;
+			buildPhases = (
+				67B03373814DA02BD0A1F116 /* [CP] Check Pods Manifest.lock */,
+				4ED97AA51E59B7A800EB755F /* Sources */,
+				4ED97AA61E59B7A800EB755F /* Frameworks */,
+				4ED97AA71E59B7A800EB755F /* Resources */,
+				C2DC56067137409C878B23D4 /* [CP] Embed Pods Frameworks */,
+				66C2DBCB279FB80F926E8710 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Y0uTube;
+			productName = Y0uTube;
+			productReference = 4ED97AA91E59B7A800EB755F /* Y0uTube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4ED97ABC1E59B7A800EB755F /* Y0uTubeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED97AD41E59B7A800EB755F /* Build configuration list for PBXNativeTarget "Y0uTubeTests" */;
+			buildPhases = (
+				F9B5546CC9E33D8BE0DE0041 /* [CP] Check Pods Manifest.lock */,
+				4ED97AB91E59B7A800EB755F /* Sources */,
+				4ED97ABA1E59B7A800EB755F /* Frameworks */,
+				4ED97ABB1E59B7A800EB755F /* Resources */,
+				322BE6387255AA4E241565C3 /* [CP] Embed Pods Frameworks */,
+				A49E0451CD9C493A4F54FE58 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ED97ABF1E59B7A800EB755F /* PBXTargetDependency */,
+			);
+			name = Y0uTubeTests;
+			productName = Y0uTubeTests;
+			productReference = 4ED97ABD1E59B7A800EB755F /* Y0uTubeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4ED97AC71E59B7A800EB755F /* Y0uTubeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ED97AD71E59B7A800EB755F /* Build configuration list for PBXNativeTarget "Y0uTubeUITests" */;
+			buildPhases = (
+				4ED97AC41E59B7A800EB755F /* Sources */,
+				4ED97AC51E59B7A800EB755F /* Frameworks */,
+				4ED97AC61E59B7A800EB755F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ED97ACA1E59B7A800EB755F /* PBXTargetDependency */,
+			);
+			name = Y0uTubeUITests;
+			productName = Y0uTubeUITests;
+			productReference = 4ED97AC81E59B7A800EB755F /* Y0uTubeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ED97AA11E59B7A800EB755F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Gary;
+				TargetAttributes = {
+					4ED97AA81E59B7A800EB755F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z963V6P3ZK;
+						ProvisioningStyle = Automatic;
+					};
+					4ED97ABC1E59B7A800EB755F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z963V6P3ZK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4ED97AA81E59B7A800EB755F;
+					};
+					4ED97AC71E59B7A800EB755F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Z963V6P3ZK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4ED97AA81E59B7A800EB755F;
+					};
+				};
+			};
+			buildConfigurationList = 4ED97AA41E59B7A800EB755F /* Build configuration list for PBXProject "Y0uTube" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4ED97AA01E59B7A800EB755F;
+			productRefGroup = 4ED97AAA1E59B7A800EB755F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4ED97AA81E59B7A800EB755F /* Y0uTube */,
+				4ED97ABC1E59B7A800EB755F /* Y0uTubeTests */,
+				4ED97AC71E59B7A800EB755F /* Y0uTubeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4ED97AA71E59B7A800EB755F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED97AB71E59B7A800EB755F /* LaunchScreen.storyboard in Resources */,
+				4E93D0D41E59C5010015044D /* GoogleService-Info.plist in Resources */,
+				4ED97AB41E59B7A800EB755F /* Assets.xcassets in Resources */,
+				4ED97AB21E59B7A800EB755F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED97ABB1E59B7A800EB755F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E93D0D51E59C5010015044D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED97AC61E59B7A800EB755F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E93D0D61E59C5010015044D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		322BE6387255AA4E241565C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Y0uTubeTests/Pods-Y0uTubeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66C2DBCB279FB80F926E8710 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Y0uTube/Pods-Y0uTube-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67B03373814DA02BD0A1F116 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A49E0451CD9C493A4F54FE58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Y0uTubeTests/Pods-Y0uTubeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2DC56067137409C878B23D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Y0uTube/Pods-Y0uTube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B5546CC9E33D8BE0DE0041 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4ED97AA51E59B7A800EB755F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED97AAF1E59B7A800EB755F /* ViewController.swift in Sources */,
+				4ED97AAD1E59B7A800EB755F /* AppDelegate.swift in Sources */,
+				4ED97ADB1E59BA1000EB755F /* MySubsriptionTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED97AB91E59B7A800EB755F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED97AC21E59B7A800EB755F /* Y0uTubeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ED97AC41E59B7A800EB755F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED97ACD1E59B7A800EB755F /* Y0uTubeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4ED97ABF1E59B7A800EB755F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ED97AA81E59B7A800EB755F /* Y0uTube */;
+			targetProxy = 4ED97ABE1E59B7A800EB755F /* PBXContainerItemProxy */;
+		};
+		4ED97ACA1E59B7A800EB755F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ED97AA81E59B7A800EB755F /* Y0uTube */;
+			targetProxy = 4ED97AC91E59B7A800EB755F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4ED97AB01E59B7A800EB755F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ED97AB11E59B7A800EB755F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4ED97AB51E59B7A800EB755F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ED97AB61E59B7A800EB755F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4ED97ACF1E59B7A800EB755F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ED97AD01E59B7A800EB755F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4ED97AD21E59B7A800EB755F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81EF802B172A6079B4F95B7E /* Pods-Y0uTube.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z963V6P3ZK;
+				INFOPLIST_FILE = Y0uTube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.Y0uTube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4ED97AD31E59B7A800EB755F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F1F1B323BC4D7631E7172D /* Pods-Y0uTube.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z963V6P3ZK;
+				INFOPLIST_FILE = Y0uTube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.Y0uTube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4ED97AD51E59B7A800EB755F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594DB5959B4D55E94FD7422E /* Pods-Y0uTubeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z963V6P3ZK;
+				INFOPLIST_FILE = Y0uTubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.Y0uTubeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Y0uTube.app/Y0uTube";
+			};
+			name = Debug;
+		};
+		4ED97AD61E59B7A800EB755F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D217601B363E7F04B287465 /* Pods-Y0uTubeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z963V6P3ZK;
+				INFOPLIST_FILE = Y0uTubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.Y0uTubeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Y0uTube.app/Y0uTube";
+			};
+			name = Release;
+		};
+		4ED97AD81E59B7A800EB755F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z963V6P3ZK;
+				INFOPLIST_FILE = Y0uTubeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.Y0uTubeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Y0uTube;
+			};
+			name = Debug;
+		};
+		4ED97AD91E59B7A800EB755F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Z963V6P3ZK;
+				INFOPLIST_FILE = Y0uTubeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.Y0uTubeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Y0uTube;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4ED97AA41E59B7A800EB755F /* Build configuration list for PBXProject "Y0uTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED97ACF1E59B7A800EB755F /* Debug */,
+				4ED97AD01E59B7A800EB755F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED97AD11E59B7A800EB755F /* Build configuration list for PBXNativeTarget "Y0uTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED97AD21E59B7A800EB755F /* Debug */,
+				4ED97AD31E59B7A800EB755F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED97AD41E59B7A800EB755F /* Build configuration list for PBXNativeTarget "Y0uTubeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED97AD51E59B7A800EB755F /* Debug */,
+				4ED97AD61E59B7A800EB755F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ED97AD71E59B7A800EB755F /* Build configuration list for PBXNativeTarget "Y0uTubeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ED97AD81E59B7A800EB755F /* Debug */,
+				4ED97AD91E59B7A800EB755F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ED97AA11E59B7A800EB755F /* Project object */;
+}
