@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		489BFA6D690ECD258FEBF3A0 /* Pods_Y0uTubeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABAA61E51D1DB349EC901EA /* Pods_Y0uTubeTests.framework */; };
+		4E5567391E757D5F005A5C86 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5567381E757D5F005A5C86 /* extensions.swift */; };
 		4E93D0D41E59C5010015044D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E93D0D31E59C5010015044D /* GoogleService-Info.plist */; };
 		4E93D0D51E59C5010015044D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E93D0D31E59C5010015044D /* GoogleService-Info.plist */; };
 		4E93D0D61E59C5010015044D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E93D0D31E59C5010015044D /* GoogleService-Info.plist */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		3D217601B363E7F04B287465 /* Pods-Y0uTubeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Y0uTubeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Y0uTubeTests/Pods-Y0uTubeTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E5567381E757D5F005A5C86 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		4E93D0D31E59C5010015044D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4ED97AA91E59B7A800EB755F /* Y0uTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Y0uTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED97AAC1E59B7A800EB755F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,12 +92,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E5567371E757D4C005A5C86 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E5567381E757D5F005A5C86 /* extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4ED97AA01E59B7A800EB755F = {
 			isa = PBXGroup;
 			children = (
 				4ED97AAB1E59B7A800EB755F /* Y0uTube */,
 				4E93D0D31E59C5010015044D /* GoogleService-Info.plist */,
 				4ED97AC01E59B7A800EB755F /* Y0uTubeTests */,
+				4E5567371E757D4C005A5C86 /* Extensions */,
 				4ED97ACB1E59B7A800EB755F /* Y0uTubeUITests */,
 				4ED97AAA1E59B7A800EB755F /* Products */,
 				69EFB9D1DD58723920425375 /* Pods */,
@@ -415,6 +426,7 @@
 				4ED97AAF1E59B7A800EB755F /* ViewController.swift in Sources */,
 				4ED97AAD1E59B7A800EB755F /* AppDelegate.swift in Sources */,
 				4ED97ADB1E59BA1000EB755F /* MySubsriptionTableView.swift in Sources */,
+				4E5567391E757D5F005A5C86 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
