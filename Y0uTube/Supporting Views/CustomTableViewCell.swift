@@ -21,10 +21,12 @@ class CustomTableViewCell: UITableViewCell {
     }
     
     func setupCell(cellItems: VideoItem) {
-        self.videoPic = cellItems.thumbnail
-        self.videoPic.frame = CGRect(x: 10, y: 0, width: 120, height: 90)
-        self.videoTitle.frame = CGRect(x: 140, y:0, width: self.frame.width - 140, height:90)
-        self.videoTitle.text = cellItems.title
+        videoPic = cellItems.thumbnail
+        videoPic.frame = CGRect(x: 10, y: 0, width: 120, height: 90)
+        videoTitle.frame = CGRect(x: 140, y:0, width: self.frame.width - 140, height:90)
+        videoTitle.text = cellItems.title
+        videoTitle.numberOfLines = 0
+        videoTitle.lineBreakMode = .byWordWrapping
         addSubview(videoPic)
         addSubview(videoTitle)
     }
