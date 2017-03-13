@@ -22,8 +22,8 @@ class CustomTableViewCell: UITableViewCell {
     
     func setupCell(cellItems: VideoItem) {
         videoPic = cellItems.thumbnail
-        videoPic.frame = CGRect(x: 10, y: 0, width: 120, height: 90)
-        videoTitle.frame = CGRect(x: 140, y:0, width: self.frame.width - 140, height:90)
+        videoPic.frame = CGRect(x: 0, y: 0, width: 120, height: 90)
+        videoTitle.frame = CGRect(x: 130, y:0, width: self.frame.width - 130, height:90)
         videoTitle.text = cellItems.title
         videoTitle.numberOfLines = 0
         videoTitle.lineBreakMode = .byWordWrapping

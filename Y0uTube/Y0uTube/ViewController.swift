@@ -32,6 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         items = [Int : VideoItem]();
         itemsList = [[String : AnyObject]]()
         subsriptionTableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "videoitems")
+        subsriptionTableView.separatorStyle = .none
         refresh()
     }
     
@@ -56,7 +57,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             $0.forEach({dic in
                 self.itemsList.append(dic)
             })
-            DispatchQueue.main.async(execute: { 
+            DispatchQueue.main.async(execute: {
+                self.subsriptionTableView.separatorStyle = .singleLine
                 self.subsriptionTableView.reloadData()
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
             })
