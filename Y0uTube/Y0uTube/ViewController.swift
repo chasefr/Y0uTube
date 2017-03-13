@@ -12,7 +12,7 @@ import Alamofire
 import GTMOAuth2
 import SwiftyJSON
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GIDSignInUIDelegate {
+class ViewController: UIViewController, GIDSignInUIDelegate {
 
 
     var signInButton: GIDSignInButton!
@@ -70,18 +70,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         GIDSignIn.sharedInstance().signOut()
     }
     
-    //MARK UITableViewDataSource Methods
-    
-    @available(iOS 2.0, *)
-    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemsList.count;
+}
+
+extension ViewController : UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itemsList.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90;
+        return 90
     }
     
-    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "videoitems"
         
         let tableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CustomTableViewCell
@@ -90,7 +90,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }else {
             VideoItem.cellAt(at: indexPath.item, fromList: itemsList, completion: { (video, index) in
                 self.items[index] = video;
-                DispatchQueue.main.async(execute: { 
+                DispatchQueue.main.async(execute: {
                     tableView.reloadData()
                     UIApplication.shared.isNetworkActivityIndicatorVisible = false
                 })
@@ -98,6 +98,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         return tableViewCell
     }
-    
 }
 
+extension ViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //play the video
+    }
+}
