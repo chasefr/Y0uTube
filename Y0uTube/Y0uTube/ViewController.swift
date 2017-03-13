@@ -17,27 +17,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     var signInButton: GIDSignInButton!
     var signOutButton: UIBarButtonItem!
-    var items: Array<UIImage>!      //直观一些，后面会more generic，使用泛型
+    var items: [Int : VideoItem]!
+    var itemsList: [[String : AnyObject]]!
     
     @IBOutlet weak var subsriptionTableView: MySubsriptionTableView!
-    
-    var displayItems: Array<UIImage> {
-        get {
-            return items;
-        }
-        set {
-            items = newValue
-            subsriptionTableView.reloadData()
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // set delegation
+        
         subsriptionTableView.dataSource = self;
         subsriptionTableView.delegate = self;
         GIDSignIn.sharedInstance().uiDelegate = self;
-        items = [UIImage]();
+        items = [Int : VideoItem]();
+        itemsList = [[String : AnyObject]]()
+        subsriptionTableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "videoitems")
+        refresh()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,45 +50,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         navigationItem.rightBarButtonItem = signOutButton
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        refresh();
-    }
-    
     //refresh display contents
     func refresh() {
-        let parameters = ["part" : "snippet", "chart" : "mostPopular", "key" : "your api key"]
-        let spinner = UIActivityIndicatorView(frame: CGRect(x : 0, y : 0, width : 40, height : 40));
-        spinner.activityIndicatorViewStyle = .gray;
-        spinner.center = view.center;
-        spinner.startAnimating()
-        spinner.backgroundColor = UIColor.white
-        var array = [UIImage]()
-        
-        //bring to front
-        view.addSubview(spinner)
-        DispatchQueue.global(qos: .background).async {
-            () -> Void in
-            Alamofire.request("https://www.googleapis.com/youtube/v3/videos", parameters: parameters, headers:["X-Ios-Bundle-Identifier":"com.iOS.Y0uTube"]).responseJSON{ response in
-                let responseJSON = JSON(response.result.value!)
-                responseJSON["items"].arrayValue.forEach({
-                    let imageUrl = $0["snippet"]["thumbnails"]["default"]["url"].stringValue
-                    let urlStr = URL(string: imageUrl)
-                    do {
-                        let data = try Data(contentsOf: urlStr!)
-                        let image = UIImage(data: data)
-                        array.append(image!)
-                    }catch {
-                        print("fetch error!")
-                    }
-                })
-                self.displayItems = array
-            }
-            DispatchQueue.main.async {
-                () -> Void in
-                spinner.removeFromSuperview()
-            }
-        }
+        VideoItem.getVideoItmes(completionHandler: {
+            $0.forEach({dic in
+                self.itemsList.append(dic)
+            })
+            DispatchQueue.main.async(execute: { 
+                self.subsriptionTableView.reloadData()
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            })
+        })
     }
     
     //log out
@@ -105,7 +72,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @available(iOS 2.0, *)
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count;
+        return itemsList.count;
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -115,12 +82,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "videoitems"
         
-        var tableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
-        if tableViewCell == nil {
-            tableViewCell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CustomTableViewCell
+        if let video = items[indexPath.item] {
+            tableViewCell.setupCell(cellItems: video)
+        }else {
+            VideoItem.cellAt(at: indexPath.item, fromList: itemsList, completion: { (video, index) in
+                self.items[index] = video;
+                DispatchQueue.main.async(execute: { 
+                    tableView.reloadData()
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                })
+            })
         }
-        tableViewCell?.accessoryView = UIImageView(image: items![indexPath.item])
-        return tableViewCell!
+        return tableViewCell
     }
     
 }

@@ -23,14 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().scopes = ["https://www.googleapis.com/auth/youtube", "https://www.googleapis.com/auth/youtube.readonly"]
         GIDSignIn.sharedInstance().delegate = self
         
-        //fixing auth issue
-        GIDSignIn.sharedInstance().clientID = "728877234385-3rv7fkrgboludle5epplk7e6ntmb0md2.apps.googleusercontent.com"
-        if GIDSignIn.sharedInstance().hasAuthInKeychain() {
-            GIDSignIn.sharedInstance().signInSilently()
-        }else {
-            GIDSignIn.sharedInstance().signIn()
-        }
-        
         return true
     }
 
