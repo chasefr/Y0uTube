@@ -62,6 +62,10 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
                 self.subsriptionTableView.reloadData()
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
             })
+        }, errorHandler: {
+            let alert = UIAlertController(title: "request error", message: $0, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         })
     }
     

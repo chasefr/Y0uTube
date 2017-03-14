@@ -23,13 +23,15 @@ class VideoItem {
         self.duration = duration
     }
     
-    class func getVideoItmes(completionHandler: @escaping ([[String : AnyObject]]) -> (Void)) {
+    class func getVideoItmes(completionHandler: @escaping ([[String : AnyObject]]) -> (Void), errorHandler: @escaping (String) -> (Void)) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         var items = [[String : AnyObject]]()
         Alamofire.request(globalConstants.url, parameters:globalConstants.parameters, headers:globalConstants.headers).responseJSON { response in
             if response.error != nil {
-                //handle the request errot
-                print(response.error.debugDescription)
+                //handle the request error
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                errorHandler(response.error.debugDescription)
+//                print(response.error.debugDescription)
                 return
             }
             let responseJSON = JSON(response.result.value!)
