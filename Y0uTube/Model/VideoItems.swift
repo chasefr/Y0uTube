@@ -27,6 +27,11 @@ class VideoItem {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         var items = [[String : AnyObject]]()
         Alamofire.request(globalConstants.url, parameters:globalConstants.parameters, headers:globalConstants.headers).responseJSON { response in
+            if response.error != nil {
+                //handle the request errot
+                print(response.error.debugDescription)
+                return
+            }
             let responseJSON = JSON(response.result.value!)
             responseJSON["items"].arrayValue.forEach({
                 let imageurl = $0["snippet"]["thumbnails"]["default"]["url"].stringValue
